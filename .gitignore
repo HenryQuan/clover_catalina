@@ -1,2 +1,4 @@
 # Ignore mac temp files
 **/._*
+.empty
+*.log
