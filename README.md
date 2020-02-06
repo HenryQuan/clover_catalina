@@ -1,7 +1,7 @@
 # Clover Catalina
 Catalina 10.15.2 clover config for Z390I AORUS PRO WIFI
 
-## Configuration
+# Configuration
 ||Name|
 |:---:|:---:|
 |Case|SliverStone Sugo SG13|
@@ -14,26 +14,38 @@ Catalina 10.15.2 clover config for Z390I AORUS PRO WIFI
 |RAM|Corsair Vengeance 16GB (2x8GB) DDR4|
 |SSD|Samsung 970 EVO Plus 500GB|
 
-### Storage
+
+## What doesn't work
+- WIFI
+- Sidecar and all WIFI related features
+- iMessage not tested and will never use it
+- Speaker maybe even with headphone
+- Disk can be slow sometimes (maybe because of HDD)
+
+## How to have network
+Download `HoRNDIS` and use `Android USB Tethering` but a dongle is better
+
+## Storage
 ![screenshot from mac os](https://raw.githubusercontent.com/HenryQuan/clover_catalina/master/assets/storage.png)
-#### SSD - System
+### SSD - System
 - 128GB for Mac OS Catalina
 - 372GB for Windows 10 pro
-#### HDD - Storage
+### HDD - Storage
 - Formatted as `exFAT`
 - 256GB for `TimeMachine`
 - File sharing between Windows and Mac OS
 
 *If you see `no enough space` while using disk utility, you have to create an `EFI` partition with at least `200MB` (199MB won't work). Also, it might be better to install Mac OS first and then install Windows*
 
-## How to install
+# How to install
 - Check [this guide](https://www.tonymacx86.com/threads/unibeast-install-macos-catalina-on-any-supported-intel-based-pc.285366/) for preparation on tonymacx86 and use it as a generic guide
 - [Guide](https://github.com/shiruken/hackintosh) by shiruken for Z390I
 - [Guide](https://github.com/icymind/hackintosh) by icymind for Z390I
 
-## Extra
+# Extra
 - You will need to use config_installer.plist during your installation and system updates
 - `Clover Configuration` and `Hackintool` are recommended
+- use `MonitorControl` to adjust monitor volume and brightness
 - Remember to install kexts with `Hackintool`
 - I couldn't get it to work with Intel Graphics only (no egpu), the best `ProductName` was macmini for me but flickering didn't stop (other names will just show a green screen
 - Sadly, I had to change to an AMD card to make it work
