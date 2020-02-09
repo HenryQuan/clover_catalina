@@ -22,8 +22,9 @@ Catalina 10.15.2 clover config for Z390I AORUS PRO WIFI
 - Speaker maybe even with headphone
 - Disk can be slow sometimes (maybe because of HDD)
 
-## How to have network
-Download `HoRNDIS` and use `Android USB Tethering` but a dongle is better
+## How to have WiFi
+Download `HoRNDIS` and use `Android USB Tethering` but a dongle is better. 
+Currently, I am using an `EDUP` dongle with [chris1111's driver](https://github.com/chris1111/Wireless-USB-Adapter-Clover). Yes, EDUP doesn't provide a driver for Catalina but chris1111's driver works really well.
 
 ## Storage
 ![screenshot from mac os](https://raw.githubusercontent.com/HenryQuan/clover_catalina/master/assets/storage.png)
@@ -34,6 +35,8 @@ Download `HoRNDIS` and use `Android USB Tethering` but a dongle is better
 - Formatted as `exFAT`
 - 256GB for `TimeMachine`
 - File sharing between Windows and Mac OS
+
+It is recommended to turn off `RECYCLE BIN` on Windows because the HDD might not pass the `fsck_exfat` on Mac OS
 
 *If you see `no enough space` while using disk utility, you have to create an `EFI` partition with at least `200MB` (199MB won't work). Also, it might be better to install Mac OS first and then install Windows*
 
@@ -52,4 +55,5 @@ Download `HoRNDIS` and use `Android USB Tethering` but a dongle is better
 - Wait patiently for `Time Machine` to setup
 - Nvidia cards won't work and don't even try it (for high sierra and below only)
 - I used `Turbo Boost Swicther` to disable intel turbo boost
-- GPU is quite cool without any power management
+- GPU is quite cool without any power management (better than Windows 10)
+- System update failed and maybe you need to switch back to Intel Graphics to make it work (more coming soon)
