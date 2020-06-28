@@ -1,5 +1,8 @@
 # Clover Catalina
-Catalina 10.15.2 clover config for Z390I AORUS PRO WIFI (***also working on 10.15.4 but you need to update clover***)
+Catalina 10.15.2 clover config for Z390I AORUS PRO WIFI 
+
+- ***it also works on 10.15.4 but you need to update clover***
+- it also works on 10.15.5 but there are some issues with my display
 
 # Configuration
 ||Name|
@@ -60,3 +63,7 @@ It is recommended to turn off `RECYCLE BIN` on Windows because the HDD might not
 - I used `Turbo Boost Swicther` to disable intel turbo boost
 - GPU is quite cool without any power management (~~better than Windows 10~~ about the same now after some driver updates)
 - ~~System update failed and maybe you need to switch back to Intel Graphics to make it work~~ Updated to 10.15.4 but I had no idea how. I think it failed because of clover and I simply updated to the latest version.
+- Reinstalled Mac OS (10.15.5) and Windows 10 (2004) because Windows 10 2004 update messed up both of my system
+  - Maybe don't do system update unless necessary
+- Time Machine spent almost 4 hours to restore all my data but it works really well
+
